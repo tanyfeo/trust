@@ -4,7 +4,7 @@ library(dplyr)
 library(DT)
 library(ggplot2)
 
-ESS10 <- read_sav("C:/Users/Tatiana/Downloads/ESS10.sav")
+ESS10 <- read_sav("./ESS10.sav")
 bg <- filter(ESS10, cntry == 'BG')
 
 bg_trust_all <- select(bg, ppltrst, pplfair, pplhlp, gndr)
